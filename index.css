@@ -1,0 +1,70 @@
+.contener{
+    height: 80vh;
+    width: 60vw;
+    background-color: aqua;
+    border: 2px solid grey;
+    position: relative;
+}
+.box{
+    position: absolute;
+    bottom: 0px;
+    background-color: brown;
+    height: 8vh;
+    width: 4vw;
+    border: 2px solid purple;
+    border-radius: 68px;
+    /* animation: saqlain;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0, 0, 0.56, 1.02);
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: saqlain 4s linear  infinite ,
+                      saqlain2 1s ease-out 1s infinite;
+    
+   
+}
+@keyframes saqlain { 
+
+    from {  
+         left:0;
+
+        
+        background-color: rgb(0, 0, 0);
+
+    }
+    
+    to { left: 100%;
+        background-color: rgb(255, 0, 0);
+/* transform: translateX(600px); */
+    }
+
+
+}
+@keyframes saqlain2 {
+
+    form{
+        bottom: 0;
+    }
+    to{
+        bottom: 50%;
+    }
+
+    /* 0%{
+        tansform: rotate(100deg)
+    }
+    20%{
+        transform: rotate(200deg);
+    }
+    50%{
+        transform: rotate(230deg);
+    }
+    80%{
+        transform: rotate(260deg);
+    
+    }
+    100%{
+        transform: rotate(360deg);
+    } */
+}
